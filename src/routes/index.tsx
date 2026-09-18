@@ -1,6 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import { Sparkles, Trophy, Users, PartyPopper, PlayCircle, Settings2 } from "lucide-react";
+import {
+  Sparkles,
+  Trophy,
+  Users,
+  PartyPopper,
+  PlayCircle,
+  Settings2,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useGame } from "@/store/game";
 
@@ -47,8 +54,8 @@ function Index() {
             little troublemaker?
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Two teams. Baby photos. Bragging rights. Upload childhood pics, spin the wheel of nostalgia,
-            and see who really knows their teammates.
+            Two teams. Baby photos. Bragging rights. Upload childhood pics, spin
+            the wheel of nostalgia, and see who really knows their teammates.
           </p>
 
           <div className="mt-10 flex flex-wrap justify-center gap-3">
@@ -59,11 +66,15 @@ function Index() {
                 disabled={!active && totalPlayers === 0}
               >
                 <PlayCircle className="h-5 w-5 mr-2" />
-                {active ? "Resume Game" : "Start Game"}
+                {active ? "Resume Game" : "Start Guess Who"}
               </Button>
             </Link>
             <Link to="/admin">
-              <Button size="lg" variant="outline" className="h-14 px-8 text-base">
+              <Button
+                size="lg"
+                variant="outline"
+                className="h-14 px-8 text-base"
+              >
                 <Users className="h-5 w-5 mr-2" /> Set Up Teams
               </Button>
             </Link>
