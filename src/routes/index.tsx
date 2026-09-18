@@ -66,7 +66,7 @@ function Index() {
                 disabled={!active && totalPlayers === 0}
               >
                 <PlayCircle className="h-5 w-5 mr-2" />
-                {active ? "Resume Game" : "Start Guess Who"}
+                {active ? "Resume Game" : "Start Guess"}
               </Button>
             </Link>
             <Link to="/admin">
